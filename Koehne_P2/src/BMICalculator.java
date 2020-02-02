@@ -1,6 +1,6 @@
-import java.util.Scanner;
-
 //Thomas Koehne 1/28/20
+
+import java.util.Scanner;
 
 public class BMICalculator {
 	Scanner in = new Scanner(System.in);
@@ -27,6 +27,7 @@ public class BMICalculator {
 		calculateBmiCategory();
 	}
 	
+	//Outputs end results in a clean display
 	public void displayBmi() {
 		System.out.printf("Your BMI is: %.1f\nYour BMI Category is: %s", getBmi(), getBmiCategory());
 	}
@@ -70,7 +71,7 @@ public class BMICalculator {
 		setWeight(in.nextDouble());
 	}
 
-	//Calculates Bmi Category based on BMI
+	//Calculates BMI Category based on BMI
 	private void calculateBmiCategory() {
 		if (Bmi < 18.5) {
 			BmiCategory = "Underweight";
@@ -101,7 +102,7 @@ public class BMICalculator {
 		return height;
 	}
 	
-	//Sets weight and makes sure the user input is greater than 0
+	//Sets height and makes sure the user input is greater than 0
 	private void setHeight(double height) {
 		if(height > 0) {
 			this.height = height;

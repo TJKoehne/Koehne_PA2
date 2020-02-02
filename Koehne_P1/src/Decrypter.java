@@ -3,8 +3,7 @@
 public class Decrypter {
 	
 	public static int[] decrypt(int[] plainText) {
-		int[] decryptedInput = new int[4];
-		decryptedInput = plainText;
+		int[] decryptedInput = plainText;
 		int tempInt;
 		int tempInt2;
 		
